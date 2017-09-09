@@ -77,6 +77,7 @@ function createRock(x) {
      function step() {
        el.style.top = `${top += 2}px`
        if (checkCollision(el) === true){
+
          endGame()
        }
        if (top < 400) {
@@ -86,7 +87,7 @@ function createRock(x) {
        }
      }
      window.requestAnimationFrame(step)
-     debugger
+
 
    }
 
@@ -126,6 +127,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  debugger
   clearInterval(gameInterval);
   for (let i = 0; i < ROCKS.length; i++) {
     var rock = ROCKS[i]
