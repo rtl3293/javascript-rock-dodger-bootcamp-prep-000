@@ -132,7 +132,7 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++) {
     var rock = ROCKS[i]
     rock.remove()
-    rock.pop()
+    rock.shift()
   }
   ROCKS
   window.removeEventListener('keydown', moveDodger)
