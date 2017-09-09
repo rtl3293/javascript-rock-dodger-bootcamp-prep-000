@@ -73,25 +73,25 @@ function createRock(x) {
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock(el) {
-    var top = el.style.top
-    function step() {
-      top = `${top += 2}px`
-      if (top < 200) {
-        window.requestAnimationFrame(step)
-      }
-    }
-    window.requestAnimationFrame(step)
-    if (checkCollision(el) === true){
-      ROCKS.push(el)
-      endGame()
-    }
-    else if (positionToInteger(el.style.top)-20 != 0) {
-      window.requestAnimationFrame(step)
-    } else{
-      rock.remove()
-    }
-  }
+   function moveRock(el) {
+     var top = el.style.top
+     function step() {
+       top = `${top += 2}px`
+       if (top < 200) {
+         window.requestAnimationFrame(step)
+       }
+     }
+     window.requestAnimationFrame(step)
+     if (checkCollision(el) === true){
+       ROCKS.push(el)
+       endGame()
+     }
+     else if (positionToInteger(el.style.top)-20 != 0) {
+       window.requestAnimationFrame(step)
+     } else{
+       rock.remove()
+     }
+   }
 
   moveRock(rock)
   return rock
