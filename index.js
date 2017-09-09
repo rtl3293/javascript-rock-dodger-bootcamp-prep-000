@@ -92,6 +92,7 @@ function createRock(x) {
    }
 
   moveRock(rock)
+  ROCKS.push(rock)
   return rock
     // implement me!
     // (use the comments below to guide you!)
