@@ -78,13 +78,13 @@ function createRock(x) {
        el.style.top = `${top += 2}px`
        if (top < 400) {
          window.requestAnimationFrame(step)
+       } else {
+         rock.remove()
        }
      }
      window.requestAnimationFrame(step)
      if (checkCollision(rock) === true){
        endGame()
-     } else {
-       rock.remove()
      }
    }
 
