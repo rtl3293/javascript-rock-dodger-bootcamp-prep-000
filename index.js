@@ -83,7 +83,6 @@ function createRock(x) {
      }
      window.requestAnimationFrame(step)
      if (checkCollision(el) === true){
-       ROCKS.push(el)
        endGame()
      }
      else if (positionToInteger(el.style.top)-20 != 0) {
