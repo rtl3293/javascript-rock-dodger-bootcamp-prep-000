@@ -83,6 +83,7 @@ function createRock(x) {
        }
      }
      window.requestAnimationFrame(step)
+     debugger
      if (checkCollision(el) === true){
        endGame()
      }
