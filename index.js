@@ -118,7 +118,7 @@ function createRock(x) {
   // when there's a collision
 
   // Finally, return the rock element you've created
-  return el
+  
 }
 /**
  * End the game by clearing `gameInterval`,
