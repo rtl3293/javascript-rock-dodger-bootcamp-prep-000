@@ -74,7 +74,6 @@ function createRock(x) {
    * seems like a good pace.)
    */
    function moveRock(el) {
-     var top = el.style.top
      function step() {
        top = `${top += 2}px`
        if (top < 200) {
