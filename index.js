@@ -133,7 +133,7 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++){
     ROCKS[i].remove()
   }
-  DODGER.removeEventListener('keydown', moveDodger)
+  window.removeEventListener('keydown', moveDodger)
 }
 
 function moveDodger(e) {
