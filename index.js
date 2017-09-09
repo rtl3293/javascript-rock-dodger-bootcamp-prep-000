@@ -88,6 +88,8 @@ function createRock(x) {
     }
     else if (positionToInteger(el.style.top)-20 != 0) {
       window.requestAnimationFrame(step)
+    } else{
+      rock.remove()
     }
   }
 
@@ -118,7 +120,7 @@ function createRock(x) {
   // when there's a collision
 
   // Finally, return the rock element you've created
-  
+
 }
 /**
  * End the game by clearing `gameInterval`,
