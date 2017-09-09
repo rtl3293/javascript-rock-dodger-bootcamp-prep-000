@@ -76,15 +76,15 @@ function createRock(x) {
    function moveRock(el) {
      function step() {
        el.style.top = `${top += 2}px`
-       if (top < 360) {
+       if (top <= 380) {
          window.requestAnimationFrame(step)
        }
      }
      window.requestAnimationFrame(step)
-     if (checkCollision(el) === true){
+     if (checkCollision(rock-dodging) === true){
        endGame()
      }
-     else if (positionToInteger(el.style.top)-20 != 0) {
+     else if (positionToInteger(rock.style.top)-20 != 0) {
        window.requestAnimationFrame(step)
      } else{
        rock.remove()
