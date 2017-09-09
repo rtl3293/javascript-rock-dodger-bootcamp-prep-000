@@ -128,7 +128,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  debugger
+  
   clearInterval(gameInterval);
   for (let i = 0; i < ROCKS.length; i++) {
     var rock = ROCKS[i]
